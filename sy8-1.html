@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+*{
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+body{
+	padding:0;
+	margin:0;
+	color:#FFF;
+}
+h2{
+	text-align:center;	
+}
+form{
+	width:560px;
+	margin:0 auto;
+	padding:20px;
+	background-color:#515151;
+}
+.first{
+	width:85px;
+}
+.second{
+	width:180px;
+	background-color:#fff;
+	padding:0px;
+	
+}
+.third{
+	height:50px;
+	width:260px;
+}
+td{
+	height:50px;
+}
+td,th{
+	display:table-cell;
+	vertical-align:inherit;
+}
+label{
+	font-size:16px;
+}
+</style>
+</head>
+
+<body>
+<form>
+<h2>增加快递信息</h2>
+<fieldset>
+	<legend>发货单</legend>
+	<table>
+		<tbody>
+			<tr>
+				<td class="first">发货人：</td>
+				<td class="second"></td>
+            	<td class="first">地址：</td>
+            	<td class="second"></td>
+            </tr>
+            <tr>
+            	<td class="first">电话：</td>
+            	<td class="second"></td>
+                <td>邮编：</td>
+            	<td class="second"></td>
+			</tr>
+		</tbody>
+	</table>
+</fieldset>
+	
+<fieldset>
+	<legend>收货单</legend>
+    <table>
+    	<tbody>
+        	<tr>
+            	<td class="first">收货人：</td>
+                <td class="second"></td>
+                <td class="first">地址：</td>
+            	<td class="second"></td>
+            </tr>
+            <tr>
+            	<td class="first">电话：</td>
+            	<td class="second"></td>
+                <td>邮编：</td>
+            	<td class="second"></td>
+			</tr>
+            <tr>
+            	<td class="first">地区：</td>
+                <td colspan="3">
+                <select>
+                	<option>北京</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                </select>
+                </td>
+            </tr>
+            <tr>	
+           		<td class="first">包装：</td>
+                <td class="third">
+                <input type="radio" name="pack" value="纸箱" id="zhi">
+                <label for="zhi">纸箱</label>
+                <input type="radio" name="pack" value="木箱" id="mu">
+                <label for="mu">木箱</label>
+                <input type="radio" name="pack" value="快递袋" id="kuai">
+                <label for="kuai">快递袋</label>
+                <input type="radio" name="pack" value="其他" id="qi">
+                <label for="qi">其他</label>
+				</td>            
+            </tr>
+            <tr>
+            	<td class="first">付款方式：</td>
+                <td class="third">
+                <input type="radio" name="pay" value="现金" id="xian">
+                <label for="xian">现金</label>
+                <input type="radio" name="pay" value="支付宝" id="fu">
+                <label for="fu">支付宝</label>
+                <input type="radio" name="pay" value="网银" id="wang">
+                <label for="wang">网银</label>
+                <input type="radio" name="pay" value="ATM" id="a">
+                <label for="a">ATM</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+	<legend>货物信息</legend>
+    <table>
+    	<tbody>
+        	<tr>
+            	<td class="first">货物名称：</td>
+                <td class="second"></td>
+            </tr>
+            <tr>
+            	<td class="first">数量：</td>
+                <td class="second"></td>
+                <td>重量：</td>
+                <td class="second"></td>
+                <td>发货时间：</td>
+                <td class="second"></td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+</form>
+</body>
+</html>
